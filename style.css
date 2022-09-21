@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --blue: hsl(246, 80%, 60%);
+
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(236, 41%, 34%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --white: #fff;
+}
+
+body {
+  color: var(--pale-blue);
+  background-color: var(--very-dark-blue);
+  font: 300 16px "Rubik", sans-serif;
+
+  min-height: 98vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+h1:not(.cursor),
+h2 {
+  font-weight: 300;
+  color: var(--white);
+}
+
+hgroup {
+  color: var(--desaturated-blue);
+}
+
+main {
+  padding: 4rem 1rem;
+  width: 95%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.grided {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+header .profile {
+  background-color: var(--blue);
+  border-radius: 14px;
+  padding: 1rem 1.5rem;
+  gap: 15px;
+}
+
+header .profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid var(--pale-blue);
+}
+
+header .profile .header {
+  font-size: 1.3rem;
+}
+
+.cursor:hover {
+  color: var(--pale-blue);
+}
+
+.triggered {
+  color: var(--white);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+header,
+section .items {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+}
+
+section .items:hover {
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
+section .items img:hover {
+  filter: brightness(200%);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -10px;
+  border-radius: 14px;
+}
+
+.bg-0 {
+  background-image: url(./images/icon-work.svg);
+  background-color: var(--light-red-work);
+}
+
+.bg-1 {
+  background-image: url(./images/icon-play.svg);
+  background-color: var(--soft-blue-play);
+}
+
+.bg-2 {
+  background-image: url(./images/icon-study.svg);
+  background-color: var(--light-red-study);
+}
+
+.bg-3 {
+  background-image: url(./images/icon-exercise.svg);
+  background-color: var(--lime-green-exercise);
+}
+
+.bg-4 {
+  background-image: url(./images/icon-social.svg);
+  background-color: var(--violet-social);
+}
+
+.bg-5 {
+  background-image: url(./images/icon-self-care.svg);
+  background-color: var(--soft-orange-self-care);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 96%, 69%);
+}
+
+.attribution a:hover {
+  color: hsl(91, 100%, 56%);
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 90%;
+    max-width: 1050px;
+    display: flex;
+    gap: 30px;
+  }
+
+  header {
+    width: 25%;
+    min-width: 230px;
+    max-height: 450px;
+  }
+
+  header .profile {
+    height: 70%;
+  }
+
+  header .profile .header {
+    font-size: 2.4rem;
+  }
+
+  .grided {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    flex-grow: 1;
+  }
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    font-size: 3rem;
+  }
+}
