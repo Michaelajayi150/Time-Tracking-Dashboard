@@ -1,5 +1,5 @@
 let schedule = "weekly";
-const allBtn = document.querySelectorAll("#trigger");
+const allBtn = document.querySelectorAll(".trigger");
 
 data.forEach((item, index) => {
   $("#main").append(`<section class="row w-100 pt-5 mx-auto background ${
@@ -7,15 +7,15 @@ data.forEach((item, index) => {
   }">
     <div class="col items py-4 px-3">
       <div class="d-flex align-items-center justify-content-between mb-1">
-        <h1>${item.title}</h1>
+        <h2>${item.title}</h2>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis" />
       </div>
       <div class="d-flex flex-md-column align-items-center align-items-md-start justify-content-between">
-        <h2 class="time mb-0">
+        <h3 class="time">
           ${item.timeframes[schedule].current}${
     item.timeframes[schedule].current <= 1 ? "hr" : "hrs"
   }
-        </h2>
+        </h3>
         <small class="later">
           ${
             schedule === "daily"

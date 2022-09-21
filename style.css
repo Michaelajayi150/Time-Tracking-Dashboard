@@ -30,15 +30,17 @@ body {
   justify-content: center;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 14px;
   margin-bottom: 0;
 }
 
 h1:not(.cursor),
-h2 {
+h3 {
   font-weight: 300;
   color: var(--white);
+  margin-bottom: 0;
 }
 
 hgroup {
@@ -164,7 +166,7 @@ section .items img:hover {
   header {
     width: 25%;
     min-width: 230px;
-    max-height: 450px;
+    max-height: 480px;
   }
 
   header .profile {
@@ -180,9 +182,19 @@ section .items img:hover {
     flex-grow: 1;
   }
 
-  h2 {
+  h3 {
     margin-top: 20px;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px;
     font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 998px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .grided {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
