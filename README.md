@@ -27,9 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop-view.png)
-![](./tab-view.png)
-![](./mobile-view.png)
+This is the finished Desktop view
+![](./design/desktop-view.png)
+
+This is the finished Tablet view
+![](./design/tab-view.png)
+
+This is the finished Mobile view
+![](./design/mobile-view.png)
 
 ### Links
 
